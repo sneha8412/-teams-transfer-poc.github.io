@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Notification API</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text-center" id="navbar"><span>Teams Notification Repro Page</span></div>
+        <div class="text-center" id="wrapper">
+      
+            <button id="notify-button">Notify Me!</button>
+            <button id="check-button">Request Permission</button>
+            <button id="clear-button">Clear All!</button>
+        </div>
+        <div class="error"></div>
+    </div>
+    <!-- 364x180 px is the resolution for the windows toast hero image.  -->
+    <div>
+        <div>Canvas for Transferred By Image</div>
+        <canvas id="canvas"  width= "364" height="180"></canvas>
+    </div>
+    <div>
+        <div>Canvas for Caller Image</div>
+        <canvas id="myCanvas" width= "364" height="180"></canvas>
+    </div>
+    <div>
+        <div>Single Canvas with Combined Images</div>
+        <canvas id="composite"  width= "364" height="180"></canvas>
+    </div>
+    <div id="output">
+        <div>Combined Image</div>
+        <img id="combined" src="" alt="combined image" width= "364" height="180" />
+    </div>
+    <script src="js/canvas.js"></script>
+    <script src="js/notification.js"></script>
+</body>
+</html>
